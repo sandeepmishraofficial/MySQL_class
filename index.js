@@ -1,6 +1,5 @@
-const {faker} = require('@faker-js/faker');
+const { faker } = require('@faker-js/faker');
 const mysql = require('mysql2');
-const {Connection} = require("mysql2");
 
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -9,8 +8,15 @@ const connection = mysql.createConnection({
     password: 'root'
 });
 
+let q = "INSERT INTO user (id, username, email, password) values ?";
+
+let data = [];
+for (let i = 1; i <= 100; i++) {
+    data.push(getRandomUser()); // 100 fake users data
+}
+
 try {
-    connection.query("SHOW TABLES", (err, result) => {
+    connection.query(q, [data], (err, result) => {
         if (err) throw err;
         console.log(result);
     });
@@ -18,14 +24,13 @@ try {
     console.log(err);
 }
 
-let createRandomUser = () => {
-    return {
-        userId: faker.string.uuid(),
-        username: faker.internet.userName(),
-        email: faker.internet.email(),
-        avatar: faker.image.avatar(),
-        password: faker.internet.password(),
-        birthdate: faker.date.birthdate(),
-        registeredAt: faker.date.past(),
-    };
-};
+connection.end();
+
+function getRandomUser() {
+    return [
+        faker.datatype.uuid(),
+        faker.internet.userName(),
+        faker.internet.email(),
+        faker.internet.password(),
+    ];
+}
