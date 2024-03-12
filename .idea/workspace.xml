@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b364e99c-cc95-4a23-a74b-6dca670f43d3" name="Changes" comment="">
+    <list default="true" id="b364e99c-cc95-4a23-a74b-6dca670f43d3" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +70,8 @@
       <workItem from="1710067122540" duration="482000" />
       <workItem from="1710067616042" duration="30000" />
       <workItem from="1710067654575" duration="1557000" />
-      <workItem from="1710144837853" duration="4982000" />
+      <workItem from="1710144837853" duration="5102000" />
+      <workItem from="1710273012645" duration="1042000" />
     </task>
     <task id="LOCAL-00001" summary="my sql">
       <option name="closed" value="true" />
@@ -79,7 +81,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710072985734</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <option name="closed" value="true" />
+      <created>1710150670383</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710150670383</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,6 +100,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="my sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="my sql" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
