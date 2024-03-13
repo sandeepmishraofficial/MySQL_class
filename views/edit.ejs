@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ... (your head content remains unchanged) ... -->
+</head>
+
+<body>
+<div class="card">
+    <h2>All about Edit Username: <%= user.email %> </h2>
+    <form method="POST" action="/user/<%= user.id %>?_method=PATCH">
+        <textarea name="username" placeholder="Enter new username"><%= user.username %></textarea><br>
+        <input type="password" name="password" placeholder="Enter password"><br> <br>
+        <button type="submit">Edit</button>
+    </form>
+</div>
+</body>
+
+</html>
